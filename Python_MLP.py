@@ -12,8 +12,8 @@ def sigmoid(x):
     calculating the activation
     """
     return(1/(1 + np.exp(-x)))
-    
-    
+
+
 def input_derivative(x):
     return (1- sigmoid(x))*sigmoid(x)
 

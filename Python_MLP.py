@@ -24,16 +24,16 @@ class neuralnet(object):
     """
 
     def __init__(self,size):
-    
+
         """
         Initializing the weights and the biases
         """
         self.num_layers = len(size)
         self.weights = [np.random.randn(x,y) for x,y in zip(size[1:],size[:-1])]
         self.biases =[np.random.randn(y,1) for y in size[1:]]
-        
-        
-        
+
+
+
     def forwardpass(self,x):
         """
         Forward pass through the network. Calculate the input at each layer by multiplying the activation from the previous layer and the weights. Add bias.
@@ -47,11 +47,11 @@ class neuralnet(object):
             x = np.dot(w,x) + b
             in_.append(x)
             x = sigmoid(x)
-            act.append(x)   
+            act.append(x)
         return in_,act
-        
-        
-        
+
+
+
     def backpropagation(self,in_,act,onehot):
         """
             This function calculates the error at each layer.
@@ -64,9 +64,9 @@ class neuralnet(object):
         error.append(err_last)
         for l in range(1,self.num_layers-1):
             err = np.dot(self.weights[-l].T,error[l - 1]) * input_derivative(-(l+1))
-            error.append(err)  
+            error.append(err)
         return list(reversed(error)),loss
-        
+
     def update_parameters(self,errors,act_,learning_rate):
         """
         Using the error calculated, this function updates the weights and the biases so as to reduce the loss
@@ -76,10 +76,10 @@ class neuralnet(object):
         for i in range(0,self.num_layers-1):
            temp = np.sum(np.asarray(errors[i]),axis = 1)
            temp = np.reshape(temp,np.shape(self.biases[i]))
-           db.append(temp)  
+           db.append(temp)
         self.weights = self.weights - learning_rate*np.asarray(dw)
         self.biases = self.biases - learning_rate*np.asarray(db)
-        
+
     def predict(self,x):
         """
             After training, this function can be used to predict
@@ -109,22 +109,10 @@ for j in range(0,epochs):
         loss_epoch += loss
         mynet.update_parameters(errors,act,learning_rate)
     print(abs(loss_epoch))
-    
-#random testing. Can use test data too to check the neural network    
+
+#random testing. Can use test data too to check the neural network
 x  = data[400:560,1:]
 x = x/255
-label = data[400:560,0]  
-print(label)  
-
+label = data[400:560,0]
+print(label)
 print(np.sum(mynet.predict(x.T)==label))
-        
-
-        
-        
-  
-        
-        
-        
-        
-            
-        

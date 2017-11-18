@@ -7,7 +7,7 @@ This is a repository demostrating practical implementation of **machine learning
 
 Here is the list of implementations so far:
 
-* [Simple neural network using just numpy arrays for MNIST](https:)//github.com/Gsivap/machine-learning/blob/master/first_net.py)
+* [Simple neural network using just numpy arrays for MNIST](https://github.com/Gsivap/machine-learning/blob/master/first_net.py)
 * Neural network implementation in keras for MNIST
 * Neural network in Tensorflow for MNIST
 * SVM implementation using sklearn and synthetic seperable data

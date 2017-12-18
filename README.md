@@ -13,6 +13,6 @@ Here is the list of implementations so far:
 * [SVM implementation using sklearn and synthetic seperable data](https://github.com/Gsivap/machine-learning/blob/master/SVM-%20Synthetic%20data%20and%20Linearly%20Seperable.ipynb)
 * [Regression in sklearn on Auto MPG dataset](https://github.com/Gsivap/machine-learning/blob/master/sklearn_Regression.ipynb)
 * [Regression in Tensorflow on Auto MPG dataset](https://github.com/Gsivap/machine-learning/blob/master/regressiontensorflow.ipynb)
-* Convolutional Neural Networks for CIFAR-Dataset(86% accuracy)
+* [Convolutional Neural Networks for CIFAR-Dataset(86% accuracy)](https://github.com/Gsivap/machine-learning/blob/master/CIFAR_CNN.py)
 
 

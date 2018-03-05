@@ -14,7 +14,7 @@ Here is the list of implementations so far:
 * [Neural network implementation in keras for MNIST](https://github.com/Gsivap/machine-learning/blob/master/keras_MNIST.ipynb)
 * [Neural network in Tensorflow for MNIST](https://github.com/Gsivap/machine-learning/blob/master/Tensorflow_MNIST.ipynb)
 
-**Other stuff**
+**Other stuff:**
 
 * [SVM implementation using sklearn and synthetic seperable data](https://github.com/Gsivap/machine-learning/blob/master/SVM-%20Synthetic%20data%20and%20Linearly%20Seperable.ipynb)
 * [Predicting fuel consumption-sklearn](https://github.com/Gsivap/machine-learning/blob/master/sklearn_Regression.ipynb)

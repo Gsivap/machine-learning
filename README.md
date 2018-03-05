@@ -1,6 +1,6 @@
 # About the repository
 
-This is a repository demostrating practical implementation of **machine learning algorithms** and **deep learning models**.
+This is a repository demonstrating practical implementation of **machine learning algorithms** and **deep learning models**.
 
 
 # Implementations so far
